@@ -1,4 +1,4 @@
-# Phononic Frequency Combs
+# MEMS Frequency Comb Modeling
 
 Python simulations exploring the concepts and models presented in *Existence Conditions for Phononic Frequency Combs*.
 
