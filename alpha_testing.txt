@@ -1,0 +1,32 @@
+alpha1 : 10, 1000, 100,000, 1,000,000 
+
+@ 1,000,000 probably chaotic or broadband
+@ 250,000 comb. Around f_D: 7 lines, Δf ≈ 496.66 kHz. Around 2f_D: 6 lines, Δf ≈ 496.66 kHz.
+@ 475,000 more choas are appearing Result: comb. Around f_D: 23 lines, Δf ≈ 68.00 kHz. Around 2f_D: 6 lines, Δf ≈ 496.66 kHz.
+@ 462,000 Result: comb. Around f_D: 7 lines, Δf ≈ 496.66 kHz. Around 2f_D: 6 lines, Δf ≈ 496.66 kHz.
+@ 469,000 probably chaotic or broadband (many irregular lines).
+@ 465,000 combs.  Around f_D: 7 lines, Δf ≈ 496.66 kHz. Around 2f_D: 6 lines, Δf ≈ 496.66 kHz.
+show sequence of 467k, 468k, 469k
+
+
+@13000000000000000000 probably chaotic or broadband (many irregular lines). Around f_D: 401 lines, Δf ≈ 6.67 kHz. Around 2f_D: 132 lines, Δf ≈ 8.00 kHz.
+
+
+
+alpha2: 10, 1000, 10000, 100000, 1,000,000, 10,000,000
+nothing truely changed at these ranges
+@ 1000000000000 there was some additional noise, but between 1000000000000- 8000000000000 are where some values were chaning
+
+beta:
+
+
+
+
+
+gamma:
+
+
+eta: 
+
+
+lambda:
