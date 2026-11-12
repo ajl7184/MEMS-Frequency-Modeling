@@ -1,0 +1,15 @@
+(TABLE)	Added a PI device row: 500: dict(f1=10.7e6, Q1=886, beta1=0.0, X0=0.0, f2=22.94e6, beta2=(22.94/10.7)*9e14). The key started as 1000; you renamed it 500.	The explorer gets mode frequencies and Q₁ only from this table.
+
+(run_model)	beta2 = beta2_ratio*p["beta1"] → beta2_ratio*p.get("beta2", p["beta1"])	Lets β₂ be set directly when β₁ = 0.
+
+(explorer sliders)	Γ slider max=9 → max=16	F = 1e15 was beyond the old 10⁹ limit.
+
+(drive_map)	In the line that builds P: beta2_ratio*p["beta1"] → beta2_ratio*p.get("beta2", p["beta1"])	drive_map builds its own parameter list, so without this β₂ was 0 in the map.
+
+(drive_map)	Blow-up guard in _simulate_steps(...): 1e-3 → 1e3	The old guard was 1 mm in SI units; the Mathematica-unit amplitudes (about 10) tripped it at step 0.
+
+(drive_map)	Title: β₂/β₁ = {beta2_ratio} → β₁ = {P[3]:.2e}, β₂ = {P[7]:.2e}	Shows the actual β values instead of a meaningless ratio.
+
+New cell, between 22 and 23	Settings cell: finer slider steps, refreshes the dropdown list, then sets the PI device values (Γ, λ₁, λ₂, β₂ slider, Q₂, α₁, α₂, damping, x₀, y seed, coupling form 0)	Sets the PI device exactly, without slider rounding.
+
+(map widget)	f_D range slider min=3.0, max=5.0 → min=11.0, max=12.0, default 11.3–11.6	This was your change, for her device’s range.
